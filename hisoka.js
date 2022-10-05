@@ -6493,7 +6493,7 @@ url: 'https://github.com/DikaArdnt/Hisoka-Morou'
 }, {
 callButton: {
 displayText: 'Number Phone Owner',
-phoneNumber: '+62 882-9202-4190'
+phoneNumber: '+62 858-9577-4939'
 }
 }, {
 quickReplyButton: {
@@ -6511,7 +6511,7 @@ displayText: 'Script',
 id: 'sc'
 }
 }]
-let timb = 'https://wa.me/6287892711054'
+let timb = 'https://wa.me/6285895774739'
 let butts = [
 {buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},
 {buttonId: '.ping', buttonText: {displayText: 'Speed'}, type: 1}
