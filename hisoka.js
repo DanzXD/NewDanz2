@@ -5653,10 +5653,6 @@ let sections = [
 {
 title: "CHANGE MENU BOT",
 rows: [
-{title: "Template Image", rowId: `setmenu templateImage`, description: `Change menu bot to Template Image`},
-{title: "Template Video", rowId: `setmenu templateVideo`, description: `Change menu bot to Template Video`},
-{title: "Template Gif", rowId: `setmenu templateGif`, description: `Change menu bot to Template Gif`},
-{title: "Template Message", rowId: `setmenu templateMessage`, description: `Change menu bot to Template Message`},
 {title: "Template Location", rowId: `setmenu templatelocation`, description: `Change menu bot to Template Location`}
 ]
 },
