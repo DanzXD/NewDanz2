@@ -105,19 +105,19 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
 		if (!('autobio' in setting)) setting.autobio = true
-		if (!('templateImage' in setting)) setting.templateImage = true
+		if (!('templateImage' in setting)) setting.templateImage = false
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = false
-		if (!('templateLocation' in setting)) setting.templateLocation = false
+		if (!('templateLocation' in setting)) setting.templateLocation = true
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
 		autobio: true,
-		templateImage: true,
+		templateImage: false,
 		templateVideo: false,
 		templateGif: false,
 		templateMsg: false,
-		templateLocation: false,
+		templateLocation: true,
 	    }
 	    
         } catch (err) {
@@ -1165,7 +1165,7 @@ url: 'https://github.com/DikaArdnt/Hisoka-Morou'
 }, {
 callButton: {
  displayText: 'Number Phone Owner',
-phoneNumber: '+62 882-9202-4190'
+phoneNumber: '+62 858-9577-4939'
 }
 }, {
 quickReplyButton: {
@@ -1676,7 +1676,7 @@ let buttons = [
  
  Hubungi Owner
  Jika Gagal Scan QR
- 👨‍💻~085624823115` }, { quoted: m })
+ 👨‍💻~085895774939` }, { quoted: m })
             } break
 
             case 'quotesanime': case 'quoteanime': {
@@ -5577,7 +5577,7 @@ url: 'https://github.com/DikaArdnt/Hisoka-Morou'
 }, {
 callButton: {
 displayText: 'Number Phone Owner',
-phoneNumber: '+62 882-9202-4190'
+phoneNumber: '+62 858-9577-4939'
 }
 }, {
 quickReplyButton: {
