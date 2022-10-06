@@ -995,6 +995,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 let buttonsDevote = [
 {buttonId: `${prefix}upvote`, buttonText: {displayText: '𝚄𝙿𝚅𝙾𝚃𝙴'}, type: 1},
 {buttonId: `${prefix}devote`, buttonText: {displayText: '𝙳𝙴𝚅𝙾𝚃𝙴'}, type: 1}
+
 ]
 
 let buttonMessageDevote = {
@@ -1041,6 +1042,20 @@ if (!(m.chat in vote)) throw `_*tidak ada voting digrup ini!*_\n\n*${prefix}vote
 delete vote[m.chat]
 m.reply('Berhasil Menghapus Sesi Vote Di Grup Ini')
 }
+break
+case 'welcome':
+if (text === 'enable') {
+if (isAntidelete === true) return m.reply('Welcome already active')
+group.addWelcome(m.from, _group)
+m.reply(`Success activated Welcome`)
+if (text === 'disable') {
+if (isAntidelete === false) return m.reply('Welcome already deactive')
+group.delWelcome(m.from, _group)
+m.reply(`Success deactivated Welcome')
+} else {
+let buttons = [
+{ buttonId: `Welcome enable `, buttonText: { displayText: 'ENABLE'}, type: 1 },
+{buttonId: `Welcome disable `, buttonText: { displayText: 'DISABLE'}, type: 1 }
 
 break
 case 'group': case 'grup': {
